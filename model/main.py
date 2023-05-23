@@ -7,6 +7,7 @@ import pickle
 
 def get_clean_data():
     data = pd.read_csv('data/data.csv')
+    data = data.drop(['thall'], axis=1)
     return data
 
 def create_model(data):
