@@ -55,7 +55,7 @@ def main():
   
   col1, col2 = st.columns([4,1])
 
-
+  st.write(input_data)
   
 
 
