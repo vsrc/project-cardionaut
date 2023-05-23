@@ -21,7 +21,9 @@ def main():
     st.title("Project: Cardionaut")
     st.write("Heart Attack AI predictor")
   
-  # col1, col2 = st.columns([4,1])
+  col1, col2 = st.columns([4,1])
+
+  
   
 
 
