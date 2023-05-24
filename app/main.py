@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import pandas as pd
-# import plotly.graph_objects as go
+import plotly.graph_objects as go
 import numpy as np
 from streamlit_toggle import st_toggle_switch
 
@@ -59,11 +59,23 @@ def add_predictions(input_data):
   else:
     st.write("<span class='diagnosis high'>High possibility</span>", unsafe_allow_html=True)
     
+  noval = model.predict_proba(input_array_scaled)[0][0]*100
+  yesval = model.predict_proba(input_array_scaled)[0][1]*100
+  options = ['Not probable', 'Very probable']
+  values = [noval, yesval]
+  colors = ['#01db4b', '#ff4b4b']
+
+
+  fig = go.Figure(data=go.Pie(
+      labels=options,
+      values=values,
+      marker=dict(colors=colors)  
+  ))
+  st.plotly_chart(fig)
   
-  # st.write("Probability of being benign: ", model.predict_proba(input_array_scaled)[0][0])
-  # st.write("Probability of being malicious: ", model.predict_proba(input_array_scaled)[0][1])
+  st.write("Probability of _**NOT**_ having a heart attack: ", noval, "%")
+  st.write("Probability of having a heart attack: ", yesval, "%")
   
-  # st.write("This app can assist medical professionals in making a diagnosis, but should not be used as a substitute for a professional diagnosis.")
 
 
 def main():
