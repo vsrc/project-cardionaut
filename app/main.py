@@ -13,7 +13,7 @@ def add_sidebar():
   slider_labels = [
     ("Age","Age of the person","age","18", "90",  "half", 1, 0),
     ("Gender","Anonymized gender of the person","sex","0", "1",  "0", 1, 0),
-    ("Chest Pain","Chest Pain type chest pain type Value 0: typical angina, Value 1: atypical angina, Value 2: non-anginal pain, Value 3: asymptomatic","cp","0", "3",  "half", 1, 0),
+    ("Chest Pain","Chest Pain type chest pain type Value 0: typical angina, Value 1: atypical angina, Value 2: non-anginal pain, Value 3: asymptomatic","cp","0", "3",  "1", 1, 0),
     ("Blood Pressure","resting blood pressure (in mm Hg)","trtbps","94", "200",  "half", 1, 0),
     ("Cholestoral","cholestoral in mg/dl fetched via BMI sensor","chol","126", "564",  "half", 1, 0),
     ("Blood sugar","(is fasting blood sugar > 120 mg/dl)","fbs","0", "0",  "half", 1, 1),

@@ -18,12 +18,15 @@
   background-color: #ff4b4b;
 }
 
+/* 
 #MainMenu {
   visibility: hidden;
-}
-footer {
+} 
+header {
   visibility: hidden;
 }
-header {
+*/
+
+footer {
   visibility: hidden;
 }
