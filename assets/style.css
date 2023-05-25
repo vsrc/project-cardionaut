@@ -17,3 +17,13 @@
 .diagnosis.high {
   background-color: #ff4b4b;
 }
+
+#MainMenu {
+  visibility: hidden;
+}
+footer {
+  visibility: hidden;
+}
+header {
+  visibility: hidden;
+}
