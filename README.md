@@ -1,7 +1,7 @@
 # Project: Cardionaut
 ## Heart Attack AI predictor
 
-This is a simple AI model that predicts the probability of a heart attack based on a set of measurements. The model is a simple Logistic Regression model with an accuracy of: 83.6%"
+This is a simple AI model that predicts the probability of a heart attack based on a set of measurements. It's a simple Logistic Regression model with an accuracy of: 83.6%
 
 **Disclaimer:**
 
